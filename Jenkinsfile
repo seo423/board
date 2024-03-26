@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Build Codes by Gradle') {
             steps {
-              sh "./gradlew clean build"
+              bat "./gradlew clean build"
             }
         }
         stage('dockerizing project by dockerfile') {
